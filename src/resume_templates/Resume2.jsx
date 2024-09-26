@@ -61,6 +61,9 @@ const resumeData = {
     { skill: "Adobe InDesign" },
     { skill: "Figma" },
     { skill: "UI/UX Design" },
+    { skill: "Sketch" },
+    { skill: "InVision" },
+    { skill: "CorelDRAW" },
   ],
   customSections: [
     {
@@ -77,8 +80,10 @@ const Resume2 = () => {
         maxWidth="md"
         className="resume-page"
         sx={{
-          border: "1px solid black",
+          borderRadius: "10px",
+          boxShadow: "0px 0px 27px -5px rgba(0,0,0,0.75)",
           paddingTop: "15px",
+          marginTop: "30px",
         }}
       >
         <Typography variant="h4" textAlign={"center"}>
@@ -181,6 +186,34 @@ const Resume2 = () => {
               </ListItem>
             ))}
           </List>
+        </Grid>
+
+        {/* Skills Section */}
+        <Grid item container>
+          <Typography
+            variant="h5"
+            sx={{
+              fontWeight: "700",
+              textAlign: "center",
+              bgcolor: "lightgray",
+              width: "100%",
+              mt: "15px",
+            }}
+          >
+            Skills
+          </Typography>
+          <Grid container spacing={0} sx={{ mt: 2 }}>
+            {resumeData.skills.map((skill, index) => (
+              <Grid item xs={6} key={index} sx={{ padding: "0 1px" }}>
+                <ListItem>
+                  <ListItemText
+                    primary={skill.skill}
+                    primaryTypographyProps={{ fontWeight: "bold" }}
+                  />
+                </ListItem>
+              </Grid>
+            ))}
+          </Grid>
         </Grid>
 
         {/* Projects Section */}

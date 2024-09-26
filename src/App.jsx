@@ -4,8 +4,9 @@ import Resume2 from "./resume_templates/Resume2";
 function App() {
   return (
     <>
-      {/* <Resume0 /> */}
+      <Resume0 />
       {/* <Resume1 /> */}
+
       <Resume2 />
     </>
   );
