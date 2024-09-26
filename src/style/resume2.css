@@ -1,0 +1,28 @@
+@media print {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .resume-page {
+        width: 210mm;
+        height: 297mm;
+        padding: 20mm;
+        box-sizing: border-box;
+        page-break-after: always;
+    }
+
+    .resume-page:last-child {
+        page-break-after: auto;
+    }
+
+    /* Ensure that each section can break properly when printing */
+    .resume-page * {
+        break-inside: avoid;
+    }
+
+    /* Force page breaks after certain sections if necessary */
+    .resume-page h5 {
+        page-break-before: auto;
+    }
+}
