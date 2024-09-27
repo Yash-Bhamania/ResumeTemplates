@@ -1,0 +1,115 @@
+body {
+    font-family: "roboto", serif;
+}
+
+.resume-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.75);
+    border: 1px solid lightgray;
+}
+
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    height: 10vw;
+    align-items: center;
+}
+
+.header {
+    text-align: center;
+    width: 50%;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+.contact-info {
+    text-align: left;
+    margin: 20px 0;
+}
+
+.about-me,
+.experience,
+.education,
+.skills-expertise,
+.custom-sections,
+.reference {
+    margin-bottom: 20px;
+}
+
+.about-me p {
+    padding: 0 40px;
+}
+
+h3 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.experience-item,
+.education-item {
+    margin-bottom: 10px;
+}
+
+.company-duration1,
+.education-item {
+    font-weight: bold;
+}
+
+.skills-expertise {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills ul,
+.expertise ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.skills li,
+.expertise li {
+    margin-bottom: 5px;
+}
+
+.position {
+    margin: 10px 0;
+}
+
+.skills ul {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    padding: 0 40px;
+}
+
+.skills ul li {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #d4d4d4;
+
+    flex-wrap: wrap;
+}
+
+.experience-section {
+    padding: 0 40px;
+}
+
+.education-item {
+    padding: 0 40px;
+}
+
+.custom-sections p {
+    padding: 0 40px;
+}
+
+.reference p {
+    padding: 0 40px;
+}

@@ -93,24 +93,23 @@ const Resume2 = () => {
           {resumeData.basicDetails.profession}
         </Typography>
         <Grid item container pt={2} textAlign={"center"}>
-          <Grid item lg={4}>
+          <Grid item xs={4}>
             <Typography>
               <strong>E-mail :</strong> {resumeData.basicDetails.email}
             </Typography>
           </Grid>
-          <Grid item lg={4}>
+          <Grid item xs={4}>
             <Typography>
               <strong>Ph. No :</strong> {resumeData.basicDetails.phone}
             </Typography>
           </Grid>
-          <Grid item lg={4}>
+          <Grid item xs={4}>
             <Typography>
               <strong>Link :</strong> {resumeData.basicDetails.website}
             </Typography>
           </Grid>
         </Grid>
 
-        {/* Objective Section */}
         <Grid container>
           <Typography
             variant="h5"
@@ -134,7 +133,6 @@ const Resume2 = () => {
           </Typography>
         </Grid>
 
-        {/* Education Section */}
         <Grid item container>
           <Typography
             variant="h5"
@@ -161,7 +159,6 @@ const Resume2 = () => {
           </List>
         </Grid>
 
-        {/* Experience Section */}
         <Grid item container>
           <Typography
             variant="h5"
@@ -188,7 +185,6 @@ const Resume2 = () => {
           </List>
         </Grid>
 
-        {/* Skills Section */}
         <Grid item container>
           <Typography
             variant="h5"
@@ -216,7 +212,6 @@ const Resume2 = () => {
           </Grid>
         </Grid>
 
-        {/* Projects Section */}
         <Grid item container>
           <Typography
             variant="h5"
@@ -243,7 +238,6 @@ const Resume2 = () => {
           </List>
         </Grid>
 
-        {/* Custom Section */}
         <Grid item container>
           <Typography
             variant="h5"
